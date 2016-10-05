@@ -25,7 +25,7 @@ public class Zork {
 		System.out.println("Insert a number between 1 and 10");
 		String answer2 = "";
 		while(!answer2.equals("7")){
-		answer2 = scan.next();
+		answer2 = scan.nextLine();
 		switch(answer2){
 		case "7":
 			System.out.println("Good, now guess the password.");
@@ -38,7 +38,7 @@ public class Zork {
 		
 		String answer3 = "";
 		while(!answer3.equals("password")){
-			answer3 = scan.next();
+			answer3 = scan.nextLine();
 			switch(answer3){
 			case "password":
 				System.out.println("Hmmmmm you're pretty good at this.");
@@ -48,6 +48,39 @@ public class Zork {
 				break;
 			}
 		}
+		
+		System.out.println("The door opened. Would you like to go left or right?");
+		String answer4 = "";
+		while(!answer4.equals("right") && !answer4.equals("left")){
+		answer4 = scan.nextLine();
+		switch(answer4){
+		case "left":
+			System.out.println("Now there is a long hallway. Would you like to continue left or turn back?");
+			break;
+		case "right":
+			System.out.println("Now there is another door. Would you like to continue right or turn back?");
+			break;
+		default:
+			System.out.println("Not an option");
+			break;
+		}
+		}
+		
+		String answer5 = "";
+		while(!answer5.equals("continue left") && !answer5.equals("continue right") && !answer5.equals("turn back")){
+			answer5 = scan.nextLine();
+			switch(answer5){
+			case "continue left":
+				System.out.println("There is a cute puppy sitting at the end of the hallway");
+				break;
+			case "continue right":
+				System.out.println("The room is dark. You should look around for a light switch");
+				break;
+			default :
+				System.out.println("Not an option");
+				break;
+			}
+	}
 	}
 		
 		
