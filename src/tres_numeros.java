@@ -9,29 +9,52 @@ public static void main(String[] args) {
 	int e = Integer.parseInt(b);
 	int f = Integer.parseInt(c);
 	
-	if (d > e && e > f){
-		System.out.printf("%d %d %d \n", d, e, f);
-		System.out.printf("%d %d %d \n", f, e, d);
-	}
-	if (d > f && f > e){
-		System.out.println(d + f + e);
-		System.out.println(e + f + d);
-	}
-	if (e > d && d> f){
-		System.out.println(e + d + f);
-		System.out.println(f + d + e);
-	}
-	if (e > f && f > d){
-		System.out.println(e + f + d);
-		System.out.println(d + f+ e);
-	}
-	if (f > e && e> d){
-		System.out.println(f + e + d);
-		System.out.println(d + e + f);
-	}
-	if (f > d && d > e){
-		System.out.println(f + d + e);
-		System.out.println(e + d + f);
+//	if (d > e && e > f){
+//		System.out.printf("%d %d %d \n", d, e, f);
+//		System.out.printf("%d %d %d \n", f, e, d);
+//	}
+//	if (d > f && f > e){
+//		System.out.printf("%d %d %d \n", d + f + e);
+//		System.out.printf("%d %d %d \n", e + f + d);
+//	}
+//	if (e > d && d> f){
+//		System.out.printf("%d %d %d \n", e + d + f);
+//		System.out.printf("%d %d %d \n", f + d + e);
+//	}
+//	if (e > f && f > d){
+//		System.out.printf("%d %d %d \n", e + f + d);
+//		System.out.printf("%d %d %d \n", d + f+ e);
+//	}
+//	if (f > e && e> d){
+//		System.out.printf("%d %d %d \n", f + e + d);
+//		System.out.printf("%d %d %d \n", d + e + f);
+//	}
+//	if (f > d && d > e){
+//		System.out.printf("%d %d %d \n", f + d + e);
+//		System.out.printf("%d %d %d \n", e + d + f);
+//	}
+	if (d > e){
+		if(e > f){
+			System.out.printf("%d %d %d \n", d, e, f);
+			System.out.printf("%d %d %d \n", f, e, d);
+		}else if(d > f){
+			System.out.printf("%d %d %d \n", d + f + e);
+			System.out.printf("%d %d %d \n", e + f + d);
+		}else{
+			System.out.printf("%d %d %d \n", f + d + e);
+			System.out.printf("%d %d %d \n", e + d + f);	
+		}
+	}else{
+		if(e > f){
+			System.out.printf("%d %d %d \n", e, f, e);
+			System.out.printf("%d %d %d \n", e, f, d);
+		}else if(d > f){
+			System.out.printf("%d %d %d \n", d + f + e);
+			System.out.printf("%d %d %d \n", e + f + d);
+		}else{
+			System.out.printf("%d %d %d \n", f + d + e);
+			System.out.printf("%d %d %d \n", e + d + f);	
+		}
 	}
 }
 }
