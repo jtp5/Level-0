@@ -76,6 +76,8 @@ public class Zork {
 			case "continue right":
 				System.out.println("The room is dark. You should look around for a light switch");
 				break;
+			case "turn back":
+				
 			default :
 				System.out.println("Not an option");
 				break;
